@@ -7,11 +7,12 @@ export default function Post(props) {
     const router = useRouter()
 
     
-    
+    const { id } = router.query
     
 
     return (
         <>
+            <h3>Post name is {id} </h3>
             <p>
                 <Link href="/blog">Back to the blogs baby</Link>
             </p>
